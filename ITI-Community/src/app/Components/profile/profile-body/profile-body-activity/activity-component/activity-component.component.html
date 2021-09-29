@@ -1,0 +1,14 @@
+<div class="btn shadowbtn p-3" routerLink="/savedPosts/{{post.id}}">
+  <div class="d-flex">
+    <img [src]="post.data.Auther.avatar" class="rounded-circle" width="25%" height="50px" />
+    <div style="text-align: left; margin-left: 5%;">
+      <h6 style="color: rgb(151, 11, 11); font-weight: 700;">{{post.data.Auther.firstName}}
+        {{post.data.Auther.lastName}}</h6>
+      <small class="text-secondary">{{post.data.Auther.jobTitle}}</small>
+    </div>
+  </div>
+  <hr />
+  <div>
+    {{post.data.Body.slice(0, 25)}} ...
+  </div>
+</div>
